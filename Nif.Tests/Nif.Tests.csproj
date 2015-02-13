@@ -61,17 +61,38 @@
         <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
       </ItemGroup>
     </When>
-    <Otherwise>
-      <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
-      </ItemGroup>
-    </Otherwise>
+    <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="Logging\LoggerExtensionsTests.cs" />
+    <Compile Include="Logging\LoggerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nif.Converters\Nif.Converters.csproj">
+      <Project>{4414db92-92b5-4a76-9db5-7a8d7821f82c}</Project>
+      <Name>Nif.Converters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nif.Data\Nif.Data.csproj">
+      <Project>{54dced78-4928-40f1-badf-58b647e03726}</Project>
+      <Name>Nif.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nif.Extensions\Nif.Extensions.csproj">
+      <Project>{ccd1fe9a-3f23-4649-ba51-1578b93a0d53}</Project>
+      <Name>Nif.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nif.Logging\Nif.Logging.csproj">
+      <Project>{641ff54a-b46b-4a1b-bfca-aaed56ab2866}</Project>
+      <Name>Nif.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nif.Utilities\Nif.Utilities.csproj">
+      <Project>{b1a54605-3b99-4e00-9d16-926068171be0}</Project>
+      <Name>Nif.Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

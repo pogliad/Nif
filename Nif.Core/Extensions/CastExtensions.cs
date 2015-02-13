@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics.Contracts;
 
-namespace Nif.Extensions
+namespace Nif.Core.Extensions
 {
     public static class CastExtensions
     {

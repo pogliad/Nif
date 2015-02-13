@@ -1,6 +1,6 @@
 using System;
 using System.Diagnostics.Contracts;
-using Nif.Extensions;
+using Nif.Core.Extensions;
 
 namespace Nif.Converters.Base64Converter
 {

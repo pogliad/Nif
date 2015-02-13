@@ -4,7 +4,7 @@ using System.Diagnostics.Contracts;
 using System.IO;
 using System.Text;
 using Excel;
-using Nif.Extensions;
+using Nif.Core.Extensions;
 
 namespace Nif.Converters.ExcelConverter
 {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics.Contracts;
 using System.Linq;
-using Nif.Extensions;
+using Nif.Core.Extensions;
 
 namespace Nif.Utilities
 {

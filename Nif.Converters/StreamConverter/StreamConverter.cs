@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics.Contracts;
 using System.IO;
-using Nif.Extensions;
+using Nif.Core.Extensions;
 
 namespace Nif.Converters.StreamConverter
 {

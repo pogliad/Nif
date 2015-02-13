@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Nif.Core;
+using Nif.Core.Extensions;
 using Nif.Data.Exceptions;
 using Nif.Extensions;
 

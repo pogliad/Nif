@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics.Contracts;
 using System.Linq.Expressions;
 using System.Reflection;
+using Nif.Core.Extensions;
 
 namespace Nif.Extensions
 {

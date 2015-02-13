@@ -1,4 +1,4 @@
-﻿namespace Nif.Extensions
+﻿namespace Nif.Core.Extensions
 {
     public static class NullableExtensions
     {

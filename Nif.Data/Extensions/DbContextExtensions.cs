@@ -2,8 +2,9 @@
 using System.Data.Entity;
 using System.Diagnostics.Contracts;
 using System.Linq;
+using Nif.Core.Extensions;
 
-namespace Nif.Extensions
+namespace Nif.Data.Extensions
 {
     public static class DbContextExtensions
     {

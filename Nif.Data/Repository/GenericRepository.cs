@@ -4,8 +4,8 @@ using System.Data.Entity;
 using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Threading.Tasks;
+using Nif.Core.Extensions;
 using Nif.Data.Specification;
-using Nif.Extensions;
 
 namespace Nif.Data.Repository
 {
@@ -14,7 +14,6 @@ namespace Nif.Data.Repository
     {
         protected readonly DbContext _context;
         protected readonly IDbSet<TEntity> _set;
-
 
         public GenericRepository(DbContext context)
         {

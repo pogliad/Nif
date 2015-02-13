@@ -4,7 +4,7 @@ using System.IO;
 using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
-using Nif.Extensions;
+using Nif.Core.Extensions;
 
 namespace Nif.Converters.XmlConverter
 {

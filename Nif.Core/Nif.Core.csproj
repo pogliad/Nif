@@ -41,6 +41,9 @@
   <ItemGroup>
     <Compile Include="Disposable.cs" />
     <Compile Include="DisposableObjectSyncLocker.cs" />
+    <Compile Include="Extensions\CastExtensions.cs" />
+    <Compile Include="Extensions\NullableExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="ICommand.cs" />
     <Compile Include="IFactory.cs" />
     <Compile Include="IQuery.cs" />

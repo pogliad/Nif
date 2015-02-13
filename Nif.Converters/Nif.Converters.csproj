@@ -59,13 +59,13 @@
     <Compile Include="XmlConverter\XmlConverter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Nif.Extensions\Nif.Extensions.csproj">
-      <Project>{ccd1fe9a-3f23-4649-ba51-1578b93a0d53}</Project>
-      <Name>Nif.Extensions</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\Nif.Core\Nif.Core.csproj">
+      <Project>{55811e58-82aa-45df-821c-976bb426613d}</Project>
+      <Name>Nif.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
