@@ -16,7 +16,7 @@ namespace Nif.Core.Extensions
 
         public static bool IsNotNullOrEmpty(this string source)
         {
-            return !String.IsNullOrEmpty(source);
+            return !string.IsNullOrEmpty(source);
         }
     }
 }
