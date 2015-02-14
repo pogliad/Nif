@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nif.Logging", "Nif.Logging\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nif.Tests", "Nif.Tests\Nif.Tests.csproj", "{C562CB10-F896-48D9-9BD2-64831EE9796A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nif.Patterns", "Nif.Patterns\Nif.Patterns.csproj", "{01B3CBA6-A1A3-4B20-9F0B-0AC56238B0B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{C562CB10-F896-48D9-9BD2-64831EE9796A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C562CB10-F896-48D9-9BD2-64831EE9796A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C562CB10-F896-48D9-9BD2-64831EE9796A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01B3CBA6-A1A3-4B20-9F0B-0AC56238B0B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B3CBA6-A1A3-4B20-9F0B-0AC56238B0B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B3CBA6-A1A3-4B20-9F0B-0AC56238B0B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01B3CBA6-A1A3-4B20-9F0B-0AC56238B0B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

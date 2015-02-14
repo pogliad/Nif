@@ -1,4 +1,4 @@
-﻿namespace Nif.Core
+﻿namespace Nif.Patterns
 {
     public interface ICommand<in TContext>
     {

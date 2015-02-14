@@ -81,10 +81,6 @@
     <Compile Include="DisposableObjectSyncLocker.cs" />
     <Compile Include="Extensions\CastExtensions.cs" />
     <Compile Include="Extensions\NullableExtensions.cs" />
-    <Compile Include="Extensions\StringExtensions.cs" />
-    <Compile Include="ICommand.cs" />
-    <Compile Include="IFactory.cs" />
-    <Compile Include="IQuery.cs" />
     <Compile Include="ObjectSyncLocker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

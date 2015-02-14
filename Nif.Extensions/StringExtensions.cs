@@ -1,15 +1,11 @@
 ﻿using System;
 using System.Diagnostics.Contracts;
+using Nif.Core.Extensions;
 
-namespace Nif.Core.Extensions
+namespace Nif.Extensions
 {
     public static class StringExtensions
     {
-        public static bool IsNotNullOrEmpty(this string source)
-        {
-            return !string.IsNullOrEmpty(source);
-        }
-        
         public static bool EqualsCaseInsensitive(this string source, string seekValue)
         {
             Contract.Requires<ArgumentNullException>(source.IsNotNullOrEmpty());
