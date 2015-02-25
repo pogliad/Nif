@@ -1,4 +1,4 @@
-﻿namespace Nif.Patterns
+﻿namespace Nif.Patterns.CQS
 {
     public interface ICommand<in TContext>
     {

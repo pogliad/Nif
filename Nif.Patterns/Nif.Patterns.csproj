@@ -77,10 +77,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICommand.cs" />
+    <Compile Include="ChainOfResponsibility\HandlerBase.cs" />
+    <Compile Include="Command\CommandInvoker.cs" />
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="CQS\ICommand.cs" />
+    <Compile Include="CQS\IQuery.cs" />
     <Compile Include="IFactory.cs" />
-    <Compile Include="IQuery.cs" />
+    <Compile Include="Interpreter\Context.cs" />
+    <Compile Include="Interpreter\IExpression.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Nif.Core\Nif.Core.csproj">
+      <Project>{55811e58-82aa-45df-821c-976bb426613d}</Project>
+      <Name>Nif.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

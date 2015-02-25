@@ -1,4 +1,4 @@
-﻿namespace Nif.Patterns
+﻿namespace Nif.Patterns.CQS
 {
     public interface IQuery<in TQuestion, out TAnswer>
     {
