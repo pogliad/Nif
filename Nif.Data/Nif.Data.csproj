@@ -90,6 +90,7 @@
     <Compile Include="Exceptions\DbEntitiesValidationsException.cs" />
     <Compile Include="Exceptions\EntityLastModifyDateTimeIsLessThanCreateDateTimeException.cs" />
     <Compile Include="Extensions\DbContextExtensions.cs" />
+    <Compile Include="Extensions\ReflectionExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\GenericRepository.cs" />
     <Compile Include="Repository\IRepository.cs" />
@@ -108,10 +109,6 @@
     <ProjectReference Include="..\Nif.Core\Nif.Core.csproj">
       <Project>{55811e58-82aa-45df-821c-976bb426613d}</Project>
       <Name>Nif.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Nif.Extensions\Nif.Extensions.csproj">
-      <Project>{ccd1fe9a-3f23-4649-ba51-1578b93a0d53}</Project>
-      <Name>Nif.Extensions</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

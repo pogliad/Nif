@@ -1,4 +1,4 @@
-﻿using Nif.Utilities;
+﻿using Nif.Core.Utilities;
 using NUnit.Framework;
 
 namespace Nif.Tests.Utilities

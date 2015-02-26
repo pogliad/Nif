@@ -5,7 +5,7 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 using Nif.Core.Extensions;
 
-namespace Nif.Utilities
+namespace Nif.Core.Utilities
 {
     public static class EnumUtility
     {

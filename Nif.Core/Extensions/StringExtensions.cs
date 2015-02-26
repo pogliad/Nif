@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Diagnostics.Contracts;
-using Nif.Core.Extensions;
 
-namespace Nif.Extensions
+namespace Nif.Core.Extensions
 {
     public static class StringExtensions
     {

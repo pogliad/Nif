@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Nif.Utilities
+namespace Nif.Core.Utilities
 {
     public static class NewKeyUtility
     {

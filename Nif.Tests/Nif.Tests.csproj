@@ -102,8 +102,6 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="Logging\LoggerExtensionsTests.cs" />
-    <Compile Include="Logging\LoggerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\NewKeyUtilityTests.cs" />
   </ItemGroup>
@@ -112,25 +110,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Nif.Converters\Nif.Converters.csproj">
-      <Project>{4414db92-92b5-4a76-9db5-7a8d7821f82c}</Project>
-      <Name>Nif.Converters</Name>
+    <ProjectReference Include="..\Nif.Core\Nif.Core.csproj">
+      <Project>{55811e58-82aa-45df-821c-976bb426613d}</Project>
+      <Name>Nif.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Nif.Data\Nif.Data.csproj">
       <Project>{54dced78-4928-40f1-badf-58b647e03726}</Project>
       <Name>Nif.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Nif.Extensions\Nif.Extensions.csproj">
-      <Project>{ccd1fe9a-3f23-4649-ba51-1578b93a0d53}</Project>
-      <Name>Nif.Extensions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Nif.Logging\Nif.Logging.csproj">
-      <Project>{641ff54a-b46b-4a1b-bfca-aaed56ab2866}</Project>
-      <Name>Nif.Logging</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Nif.Utilities\Nif.Utilities.csproj">
-      <Project>{b1a54605-3b99-4e00-9d16-926068171be0}</Project>
-      <Name>Nif.Utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

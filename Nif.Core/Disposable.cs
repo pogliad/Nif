@@ -4,7 +4,7 @@ namespace Nif.Core
 {
     public abstract class Disposable : IDisposable
     {
-        private bool _disposed;
+        protected bool _disposed;
 
         public void Dispose()
         {

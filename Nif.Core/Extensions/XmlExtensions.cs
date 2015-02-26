@@ -4,13 +4,12 @@ using System.IO;
 using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
-using Nif.Core.Extensions;
 
-namespace Nif.Converters.XmlConverter
-{
-    public static class XmlConverter
+namespace Nif.Core.Extensions
+{   
+    public static class XmlExtensions
     {
-        public static string Serialize<T>(T obj)
+        public static string ToXml<T>(this T obj) where T : class
         {
             using (var ms = new MemoryStream())
             {
@@ -26,7 +25,7 @@ namespace Nif.Converters.XmlConverter
             }
         }
 
-        public static T Deserialize<T>(string xml)
+        public static T FromXml<T>(this string xml)
         {
             Contract.Requires<ArgumentNullException>(xml.IsNotNullOrEmpty());
 

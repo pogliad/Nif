@@ -77,8 +77,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnumUtility.cs" />
-    <Compile Include="NewKeyUtility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringGeneratorUtility.cs" />
     <Compile Include="TransliterationUtility.cs" />

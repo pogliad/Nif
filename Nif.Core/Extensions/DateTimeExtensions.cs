@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Nif.Extensions
+namespace Nif.Core.Extensions
 {
     public static class DateTimeExtensions
     {

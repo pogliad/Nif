@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Nif.Core;
 using Nif.Core.Extensions;
 using Nif.Data.Exceptions;
-using Nif.Extensions;
+using Nif.Data.Extensions;
 
 namespace Nif.Data.UnitOfWork
 {

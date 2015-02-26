@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using Nif.Core.Extensions;
 
-namespace Nif.Extensions
+namespace Nif.Data.Extensions
 {
     public static class ReflectionExtensions
     {
@@ -34,13 +34,6 @@ namespace Nif.Extensions
                 | BindingFlags.NonPublic
                 | BindingFlags.SetProperty
                 | BindingFlags.Instance, null, obj, new object[] { value });
-        }
-
-        public static bool IsInheritedFromInterface<T>(this Type source)
-        {
-            var inheritedInterface = source.GetInterface(typeof(T).Name);
-
-            return !inheritedInterface.IsNull();
-        }
+        }        
     }
 }

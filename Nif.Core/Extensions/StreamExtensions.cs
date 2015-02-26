@@ -1,13 +1,12 @@
 using System;
 using System.Diagnostics.Contracts;
 using System.IO;
-using Nif.Core.Extensions;
 
-namespace Nif.Converters.StreamConverter
+namespace Nif.Core.Extensions
 {
-    public static class StreamConverter
+    public static class StreamExtensions
     {
-        public static byte[] Convert(Stream stream)
+        public static byte[] ToBytes(this Stream stream)
         {
             Contract.Requires<ArgumentNullException>(stream.IsNotNull());
 

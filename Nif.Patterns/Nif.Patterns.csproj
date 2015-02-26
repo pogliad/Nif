@@ -83,8 +83,6 @@
     <Compile Include="CQS\ICommand.cs" />
     <Compile Include="CQS\IQuery.cs" />
     <Compile Include="IFactory.cs" />
-    <Compile Include="Interpreter\Context.cs" />
-    <Compile Include="Interpreter\IExpression.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
