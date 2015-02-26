@@ -5,8 +5,8 @@ Infrastructure for regular .NET projects.
 The repo contains the following components. More libraries are coming soon. [Watch](https://github.com/kokhans/Nif/subscription) the repo to be notified.
 
 * **Core**
-* **Patterns**
 * **Data**
+* **Patterns**
 
 ## Getting Started
 To get started with Nif, see the Nif [Wiki](https://github.com/kokhans/Nif/wiki).
