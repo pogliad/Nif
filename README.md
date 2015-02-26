@@ -6,11 +6,7 @@ The repo contains the following components. More libraries are coming soon. [Wat
 
 * **Core**
 * **Patterns**
-* **Extensions**
 * **Data**
-* **Logging**
-* **Utilities**
-* **Converters**
 
 ## Getting Started
 To get started with Nif, see the Nif [Wiki](https://github.com/kokhans/Nif/wiki).
