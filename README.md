@@ -4,7 +4,7 @@ Infrastructure for regular .NET projects.
 ## Nif Library Components
 The repo contains the following components. More libraries are coming soon. [Watch](https://github.com/kokhans/Nif/subscription) the repo to be notified.
 
-* **Core** - Contains common Providers, Extensions, Utilities and mechanism for releasing managed/unmanaged resources.
+* **[Core](https://github.com/kokhans/Nif/wiki/Core-API)** - Contains common Providers, Extensions, Utilities and mechanism for releasing managed/unmanaged resources.
 
 ## Getting Started
 To get started with Nif, see the Nif [Wiki](https://github.com/kokhans/Nif/wiki).
