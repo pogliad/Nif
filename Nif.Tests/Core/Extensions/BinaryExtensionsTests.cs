@@ -1,6 +1,7 @@
 ﻿using System;
 using Nif.Core;
 using Nif.Core.Extensions;
+using Nif.Core.Providers;
 using NUnit.Framework;
 
 namespace Nif.Tests.Core.Extensions

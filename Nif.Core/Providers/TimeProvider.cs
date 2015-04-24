@@ -1,7 +1,7 @@
 ﻿using System;
 using Nif.Core.Extensions;
 
-namespace Nif.Core
+namespace Nif.Core.Providers
 {
     public abstract class TimeProvider
     {

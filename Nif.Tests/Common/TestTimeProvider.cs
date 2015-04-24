@@ -1,5 +1,6 @@
 ﻿using System;
 using Nif.Core;
+using Nif.Core.Providers;
 
 namespace Nif.Tests.Common
 {

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Nif.Core.Extensions
+﻿namespace Nif.Core.Extensions
 {
     public static class NullableExtensions
     {
