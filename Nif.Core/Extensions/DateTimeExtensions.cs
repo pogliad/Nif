@@ -20,6 +20,6 @@ namespace Nif.Core.Extensions
         public static bool IsWeekend(this DayOfWeek dayOfWeek)
         {
             return !dayOfWeek.IsWeekday();
-        }
+        }       
     }
 }

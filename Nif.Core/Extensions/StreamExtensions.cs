@@ -6,15 +6,15 @@ namespace Nif.Core.Extensions
 {
     public static class StreamExtensions
     {
-        public static byte[] ToBytes(this Stream stream)
+        public static byte[] ToBytes(this Stream source)
         {
-            Contract.Requires<ArgumentNullException>(stream.IsNotNull());
+            Contract.Requires<ArgumentNullException>(source.IsNotNull());
 
-            using (var ms = new MemoryStream())
+            using (var stream = new MemoryStream())
             {
-                stream.CopyTo(ms);
+                source.CopyTo(stream);
 
-                return ms.ToArray();
+                return stream.ToArray();
             }
         }
     }

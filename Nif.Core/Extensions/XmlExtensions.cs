@@ -6,18 +6,20 @@ using System.Xml;
 using System.Xml.Serialization;
 
 namespace Nif.Core.Extensions
-{   
+{
     public static class XmlExtensions
     {
-        public static string ToXml<T>(this T obj) where T : class
+        public static string ToXml<T>(this T source) where T : class
         {
-            using (var ms = new MemoryStream())
+            Contract.Requires<ArgumentNullException>(source.IsNotNull());
+
+            using (var stream = new MemoryStream())
             {
-                using (var writer = new XmlTextWriter(ms, Encoding.Unicode) { Formatting = Formatting.None })
+                using (var writer = new XmlTextWriter(stream, Encoding.Unicode) { Formatting = Formatting.None })
                 {
                     var serializer = new XmlSerializer(typeof(T));
 
-                    serializer.Serialize(writer, obj);
+                    serializer.Serialize(writer, source);
                     var result = writer.BaseStream as MemoryStream;
 
                     return result != null ? Encoding.Unicode.GetString(result.ToArray()) : null;
@@ -25,15 +27,15 @@ namespace Nif.Core.Extensions
             }
         }
 
-        public static T FromXml<T>(this string xml)
+        public static T FromXml<T>(this string source) where T : class
         {
-            Contract.Requires<ArgumentNullException>(xml.IsNotNullOrEmpty());
+            Contract.Requires<ArgumentNullException>(source.IsNotNullOrEmpty());
 
-            using (var ms = new MemoryStream(Encoding.Unicode.GetBytes(xml)))
+            using (var stream = new MemoryStream(Encoding.Unicode.GetBytes(source)))
             {
                 var serializer = new XmlSerializer(typeof(T));
 
-                return (T)serializer.Deserialize(ms);
+                return (T)serializer.Deserialize(stream);
             }
         }
     }

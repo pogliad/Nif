@@ -5,18 +5,18 @@ namespace Nif.Core.Extensions
 {
     public static class CastExtensions
     {
-        public static bool TryCast<T>(this object source, out T castedObject)
+        public static bool TryCast<T>(this object source, out T target)
         {
             Contract.Requires<ArgumentNullException>(source.IsNotNull());
 
             if (source is T)
             {
-                castedObject = (T)source;
+                target = (T)source;
 
                 return true;
             }
 
-            castedObject = default(T);
+            target = default(T);
 
             return false;
         }

@@ -1,10 +1,16 @@
 ﻿using System;
 using System.Diagnostics.Contracts;
+using System.Security;
 
 namespace Nif.Core.Extensions
 {
     public static class StringExtensions
     {
+        public static bool IsNotNullOrEmpty(this string source)
+        {
+            return !String.IsNullOrEmpty(source);
+        }
+
         public static bool EqualsCaseInsensitive(this string source, string seekValue)
         {
             Contract.Requires<ArgumentNullException>(source.IsNotNullOrEmpty());
@@ -21,6 +27,16 @@ namespace Nif.Core.Extensions
             return !source.EqualsCaseInsensitive(seekValue);
         }
 
+        public static bool ContainsCaseInsensitive(this string source, string seekValue)
+        {
+            Contract.Requires<ArgumentNullException>(source.IsNotNullOrEmpty());
+            Contract.Requires<ArgumentNullException>(seekValue.IsNotNullOrEmpty());
+
+            var result = source.IndexOf(seekValue, StringComparison.CurrentCultureIgnoreCase);
+
+            return result != -1;
+        }
+
         public static bool NotContains(this string source, string seekValue)
         {
             Contract.Requires<ArgumentNullException>(source.IsNotNullOrEmpty());
@@ -29,14 +45,18 @@ namespace Nif.Core.Extensions
             return !source.Contains(seekValue);
         }
 
-        public static bool ContainsCaseInsensitive(this string source, string seekValue)
+        public static SecureString ToSecureString(this string source)
         {
             Contract.Requires<ArgumentNullException>(source.IsNotNullOrEmpty());
-            Contract.Requires<ArgumentNullException>(seekValue.IsNotNullOrEmpty());
 
-            var results = source.IndexOf(seekValue, StringComparison.CurrentCultureIgnoreCase);
+            var result = new SecureString();
 
-            return results != -1;
+            foreach (var @char in source)
+            {
+                result.AppendChar(@char);
+            }
+
+            return result;
         }
     }
 }

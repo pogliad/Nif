@@ -6,7 +6,7 @@ namespace Nif.Core.Extensions
     public static class CollectionExtensions
     {
         /// <summary>
-        /// Fisher-Yates Shuffle
+        /// Fisher-Yates Shuffle.
         /// </summary>
         public static T[] Shuffle<T>(this T[] source)
         {
